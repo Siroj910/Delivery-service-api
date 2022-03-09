@@ -1,0 +1,7 @@
+{% for post in object_list %}
+		<div class="post-entry">
+			<h1><a href="{% url 'object_page' post.pk %}">{{ post.name }}</a></h1>
+			<h3>{{ post.typeOffMagazine }}</h3>
+
+		</div>
+{% endfor %}
