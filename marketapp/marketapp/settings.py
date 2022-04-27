@@ -72,6 +72,14 @@ DATABASES = {
 }
 
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -90,6 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 STATIC_URL = '/static/'
+STATIC_ROOT = "/var/www/zukhrohotel.pythonanywhere.com/static/"
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # MEDIA_URL = '/media/'
@@ -99,7 +108,7 @@ STATIC_URL = '/static/'
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'UTC'
 

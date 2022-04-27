@@ -1,11 +1,12 @@
 from django.urls import path, include
-from .views import MarketViewSet, MenuViewSet
+from .views import MarketViewSet, MenuViewSet,ForUserModelViewSet
 	#routers
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register('magazines', MarketViewSet)
 router.register('menu', MenuViewSet)
+router.register('register', ForUserModelViewSet)
 
 
 
