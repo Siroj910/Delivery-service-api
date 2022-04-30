@@ -23,7 +23,11 @@ class ForUserReservation(models.Model):
 	name = models.CharField(max_length=150, blank=False)
 	full_adress = models.CharField(max_length=400, blank=False)
 	phone_num = models.CharField(max_length=20)
+	long = models.CharField(max_length=200)
+	lat = models.CharField(max_length=200)
+	
 	summa = models.CharField(max_length=100)
+	products = models.JSONField()
 
 	def __str__(self):
 		return self.name
