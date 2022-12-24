@@ -88,11 +88,5 @@ class ForUserModelViewSet(ModelViewSet):
 
 
 
-def proba(request):
-	return "Hello world"
-
-
-
-
 
 
