@@ -13,6 +13,7 @@ router.register('register', ForUserModelViewSet)
 
 urlpatterns = [
     path('get/', include(router.urls))
+    # path()asd asda asda sdasd asd adasd asd
 ]
 
 
